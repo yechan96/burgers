@@ -2,11 +2,9 @@
     {{id}}
 	{{burger}}
 
-    {{#if devoured}}
-    {{else}}
-    <button class="eat-burger" data-id="{{id}}" data-newsleep="{{devoured}}">
+    {{#unless devoured}}
+    <button class="eat-burger" data-id="{{id}}">
         Eat the burger
 	</button>
-    {{/if}}
-
+    {{/unless}}
 </li>
